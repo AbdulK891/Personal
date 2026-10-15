@@ -1,0 +1,255 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Abdul Khayyum Farooqui</title>
+  <meta name="description" content="Join us Sunday, December 20th, 2026 at 5:30 PM at Metroplex Event Center, Rogers, AR.">
+
+  <!-- Link-preview card (WhatsApp/iMessage/Facebook/etc. read these when the URL is shared) -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Abdul Khayyum Farooqui">
+  <meta property="og:description" content="Join us Sunday, December 20th, 2026 at 5:30 PM at Metroplex Event Center, Rogers, AR.">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Abdul Khayyum Farooqui">
+  <meta name="twitter:description" content="Join us Sunday, December 20th, 2026 at 5:30 PM at Metroplex Event Center, Rogers, AR.">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Alex+Brush&family=Amiri:ital@0;1&family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
+
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3E%3Cpath fill='%2391171F' d='M8 1 L11.2 8 L8 15 L4.8 8 Z'/%3E%3C/svg%3E">
+  <link rel="stylesheet" href="./static/css/style.css">
+</head>
+<body>
+
+  <!-- Reusable ornament sprite (invisible; referenced via <use>) -->
+  <svg width="0" height="0" style="position:absolute" aria-hidden="true">
+    <defs>
+      <symbol id="orn-flourish" viewBox="0 0 120 120">
+        <path d="M4,4 C40,4 28,42 60,42 C92,42 80,12 116,12" fill="none" stroke="currentColor" stroke-width="1.3"/>
+        <path d="M4,4 C4,40 42,28 42,60 C42,92 12,80 12,116" fill="none" stroke="currentColor" stroke-width="1.3"/>
+        <path d="M4,4 C48,4 48,48 96,48" fill="none" stroke="currentColor" stroke-width="0.9" opacity="0.7"/>
+        <circle cx="60" cy="42" r="2.6" fill="currentColor"/>
+        <circle cx="42" cy="60" r="2.6" fill="currentColor"/>
+        <circle cx="96" cy="48" r="2" fill="currentColor" opacity="0.7"/>
+      </symbol>
+      <symbol id="orn-diamond" viewBox="0 0 16 16">
+        <path fill-rule="evenodd" d="M8 1 L11.2 8 L8 15 L4.8 8 Z M8 6.2 L9.4 8 L8 9.8 L6.6 8 Z"/>
+      </symbol>
+    </defs>
+  </svg>
+
+  <!-- The Seal Unfastens entry -->
+  <div id="seal-overlay">
+    <div class="seal-scene">
+      <p class="eyebrow seal-eyebrow">You are lovingly invited</p>
+
+      <div class="envelope">
+        <div class="envelope-back"></div>
+        <div class="envelope-flap">
+          <svg class="envelope-crease" viewBox="0 0 100 33.75" preserveAspectRatio="none" aria-hidden="true">
+            <path class="envelope-crease-fill" d="M0,0 L100,0 L50,33.75 Z"/>
+            <path d="M0,0 L50,33.75 L100,0" vector-effect="non-scaling-stroke"/>
+          </svg>
+        </div>
+        <div class="envelope-card">
+          <p class="eyebrow">Reception</p>
+          <p class="envelope-card-names">
+            <span>Abdul Khayyum Farooqui</span>
+          </p>
+          <svg class="envelope-card-bismillah" viewBox="0 0 320 64" aria-hidden="true">
+            <g class="bismillah-reveal">
+              <text x="160" y="38" text-anchor="middle" class="bismillah-text">بِسْمِ ٱللَّٰهِ ٱلرَّحْمَٰنِ ٱلرَّحِيمِ</text>
+            </g>
+            <path class="bismillah-stroke" d="M280,54 C230,63 90,63 40,54" fill="none"/>
+          </svg>
+        </div>
+        <div class="envelope-pocket">
+          <svg class="envelope-crease" viewBox="0 0 100 56.25" preserveAspectRatio="none" aria-hidden="true">
+            <path d="M0,0.2 L50,24.95 L100,0.2" vector-effect="non-scaling-stroke"/>
+          </svg>
+        </div>
+
+        <div class="seal-wrap">
+          <button type="button" id="seal-btn" aria-label="Press the seal to enter the invitation">
+            <svg class="wax-seal" viewBox="0 0 120 120" aria-hidden="true">
+              <g class="seal-half seal-half-left">
+                <path d="M60 6 C31 6 7 30 7 60 C7 90 31 114 60 114 Z" fill="#91171F"/>
+                <path d="M60 16 C36 16 17 36 17 60 C17 84 36 104 60 104 Z" fill="#6F1017" opacity="0.5"/>
+              </g>
+              <g class="seal-half seal-half-right">
+                <path d="M60 6 C89 6 113 30 113 60 C113 90 89 114 60 114 Z" fill="#91171F"/>
+                <path d="M60 16 C84 16 103 36 103 60 C103 84 84 104 60 104 Z" fill="#6F1017" opacity="0.5"/>
+              </g>
+              <g class="seal-core">
+                <use href="#orn-diamond" x="48" y="48" width="24" height="24" style="color:#FAF3DD"/>
+              </g>
+            </svg>
+          </button>
+        </div>
+      </div>
+
+      <p class="seal-hint" id="seal-hint">Press the seal to enter</p>
+    </div>
+  </div>
+
+  <noscript>
+    <style>
+      #seal-overlay { display: none !important; }
+      main[hidden] { display: block !important; }
+      .reveal { opacity: 1 !important; transform: none !important; }
+    </style>
+  </noscript>
+
+  <!-- Main invitation -->
+  <main id="invitation" hidden>
+
+    <section class="section hero reveal">
+      <svg class="corner corner-tl" viewBox="0 0 120 120" aria-hidden="true"><use href="#orn-flourish"/></svg>
+      <svg class="corner corner-tr" viewBox="0 0 120 120" aria-hidden="true"><use href="#orn-flourish"/></svg>
+
+      <p class="besmillah-arabic">بِسْمِ ٱللَّٰهِ ٱلرَّحْمَٰنِ ٱلرَّحِيمِ</p>
+      <p class="besmillah-translation">In the name of God, the Most Gracious, the Most Merciful</p>
+
+      <p class="host-line">Mrs. Sadaf Unnisa</p>
+
+      <p class="request-line">Requests the honor of your presence at the</p>
+      <h2 class="ceremony-name">Reception</h2>
+      <p class="request-line">celebrating the marriage of her son</p>
+
+      <h1 class="couple-names">
+        <span class="name">Abdul Khayyum<br>Farooqui</span>
+      </h1>
+
+      <p class="request-line">with the daughter of</p>
+      <p class="host-line">
+        Mr. and Mrs. Nusrath Aleem Mohammed
+      </p>
+
+      <div class="divider"><span></span><svg class="divider-mark" viewBox="0 0 16 16" aria-hidden="true"><use href="#orn-diamond"/></svg><span></span></div>
+
+      <p class="blessings-label">With the blessings of</p>
+      <div class="blessings-list">
+        <ul class="blessings-group">
+          
+          <li>Mrs. Fatima Sultana</li>
+          
+        </ul>
+      </div>
+
+      <p class="blessings-label">and with the blessings of the late</p>
+      <div class="blessings-list">
+        <ul class="blessings-group">
+          <li>Mr. Abdul Basith Farooqui</li>
+          <li>Mr. &amp; Mrs. Abdul Hameed Farooqui</li>
+          <li>Mr. &amp; Mrs. Mir Kazim Ali</li>
+        </ul>
+        <ul class="blessings-group">
+          <li>Mr. &amp; Mrs. Khaja Aleemuddin</li>
+          <li>Mr. Mohammed Abdul Azeez</li>
+        </ul>
+      </div>
+
+      <svg class="corner corner-bl" viewBox="0 0 120 120" aria-hidden="true"><use href="#orn-flourish"/></svg>
+      <svg class="corner corner-br" viewBox="0 0 120 120" aria-hidden="true"><use href="#orn-flourish"/></svg>
+    </section>
+
+    <section class="section details reveal">
+      <h2 class="section-title script">Reception</h2>
+
+      <div class="details-split">
+        <div class="details-when">
+          <p class="field-label">Date</p>
+          <p class="field-value when-value">Sunday</p>
+          <p class="field-value when-value">December 20th, 2026</p>
+
+          <p class="field-label">Time</p>
+          <p class="field-value when-value field-icon-row"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3.2 1.8"/></svg> 5:30 PM onwards</p>
+          <p class="field-value when-value entry-note">Bride and groom enter at 6:00 PM</p>
+        </div>
+
+        <div class="details-where">
+          <p class="field-label">Venue</p>
+          <p class="field-value venue-name">Metroplex Event Center</p>
+          <p class="field-sub">2331 S 8th St, Rogers, AR 72758</p>
+
+          <a class="maps-btn" href="https://www.google.com/maps/search/?api=1&amp;query=Metroplex+Event+Center+2331+S+8th+St+Rogers+AR+72758" target="_blank" rel="noopener noreferrer">
+            <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 21s-6.6-5.4-6.6-10.2A6.6 6.6 0 0 1 12 4.2a6.6 6.6 0 0 1 6.6 6.6C18.6 15.6 12 21 12 21z"/><circle cx="12" cy="10.8" r="2.4"/></svg>
+            View Location
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <section class="section rsvp reveal">
+      <p class="eyebrow">Kindly Respond</p>
+      <h2 class="section-title script">RSVP</h2>
+      <p class="rsvp-note">With hearts full of gratitude, we kindly request<br>no boxed gifts, please.</p>
+
+      
+      <a class="rsvp-link" href="./rsvp.html">RSVP Here</a>
+      
+    </section>
+
+    <div class="divider section-divider"><span></span><svg class="divider-mark" viewBox="0 0 16 16" aria-hidden="true"><use href="#orn-diamond"/></svg><span></span></div>
+
+    <section class="section spiritual reveal">
+      <div class="spiritual-grid">
+        <div class="spiritual-verses">
+          
+          <blockquote class="ayah">
+            <p class="ayah-arabic">وَمِنْ آيَاتِهِ أَنْ خَلَقَ لَكُم مِّنْ أَنفُسِكُمْ أَزْوَاجًا لِّتَسْكُنُوا إِلَيْهَا وَجَعَلَ بَيْنَكُم مَّوَدَّةً وَرَحْمَةً</p>
+            <p class="ayah-translation">&ldquo;And of His signs is that He created for you from yourselves mates that you may find tranquility in them; and He placed between you affection and mercy.&rdquo;</p>
+            <cite>Quran 30:21</cite>
+          </blockquote>
+          
+          <blockquote class="ayah">
+            <p class="ayah-arabic">وَخَلَقْنَاكُمْ أَزْوَاجًا</p>
+            <p class="ayah-translation">&ldquo;And We created you in pairs.&rdquo;</p>
+            <cite>Quran 78:8</cite>
+          </blockquote>
+          
+        </div>
+
+        <div class="spiritual-side">
+          <div class="arch-card">
+            <p class="eyebrow">A Dua for the Couple</p>
+            <div class="divider small"><span></span><svg class="divider-mark" viewBox="0 0 16 16" aria-hidden="true"><use href="#orn-diamond"/></svg><span></span></div>
+            <p class="dua">Oh Allah, guide this couple to the best of understanding, happiness, prosperity &amp; success. Bless them, bring blessings upon them, and unite them in goodness. (Ameen)</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div class="divider section-divider"><span></span><svg class="divider-mark" viewBox="0 0 16 16" aria-hidden="true"><use href="#orn-diamond"/></svg><span></span></div>
+
+    <section class="section closing reveal">
+      <p class="eyebrow">A Heartfelt Note</p>
+      <h2 class="section-title script">We Can't Wait to Celebrate With You</h2>
+      <p class="closing-message">With love and gratitude, we look forward to celebrating this joyous occasion with our beloved family and friends. Your presence, prayers, and blessings will make our reception truly memorable.</p>
+
+    </section>
+
+    <div class="divider section-divider"><span></span><svg class="divider-mark" viewBox="0 0 16 16" aria-hidden="true"><use href="#orn-diamond"/></svg><span></span></div>
+
+    <section class="section countdown-section reveal">
+      <p class="eyebrow">Counting the moments to the reception</p>
+      <h2 class="section-title script">Until We Celebrate</h2>
+      <p class="detail-line">Sunday, December 20th, 2026 &middot; 5:30 PM</p>
+      <div id="countdown" class="countdown" data-target="2026-12-20T17:30:00-06:00">
+        <div class="countdown-unit"><span class="value" id="cd-days">--</span><span class="label">Days</span></div>
+        <div class="countdown-unit"><span class="value" id="cd-hours">--</span><span class="label">Hours</span></div>
+        <div class="countdown-unit"><span class="value" id="cd-minutes">--</span><span class="label">Minutes</span></div>
+        <div class="countdown-unit"><span class="value" id="cd-seconds">--</span><span class="label">Seconds</span></div>
+      </div>
+    </section>
+
+  </main>
+
+  <script src="./static/js/vendor/anime.iife.min.js"></script>
+  <script src="./static/js/seal.js"></script>
+  <script src="./static/js/countdown.js"></script>
+  <script src="./static/js/motion.js"></script>
+</body>
+</html>
