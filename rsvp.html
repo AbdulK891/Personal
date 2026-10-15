@@ -1,0 +1,97 @@
+<!doctype html><html lang="en"><head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>RSVP · Reception</title>
+  <meta name="description" content="Join us Sunday, December 20th, 2026 at 5:30 PM at Metroplex Event Center, Rogers, AR.">
+
+  <!-- Link-preview card (WhatsApp/iMessage/Facebook/etc. read these when the URL is shared) -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Abdul Khayyum Farooqui">
+  <meta property="og:description" content="Join us Sunday, December 20th, 2026 at 5:30 PM at Metroplex Event Center, Rogers, AR.">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Abdul Khayyum Farooqui">
+  <meta name="twitter:description" content="Join us Sunday, December 20th, 2026 at 5:30 PM at Metroplex Event Center, Rogers, AR.">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Alex+Brush&family=Amiri:ital@0;1&family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
+
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3E%3Cpath fill='%2391171F' d='M8 1 L11.2 8 L8 15 L4.8 8 Z'/%3E%3C/svg%3E">
+  <link rel="stylesheet" href="./static/css/style.css">
+
+  <link rel="stylesheet" href="./static/css/rsvp.css">
+</head>
+<body class="rsvp-page">
+  <svg width="0" height="0" style="position:absolute" aria-hidden="true">
+    <defs>
+      <symbol id="orn-flourish" viewBox="0 0 120 120">
+        <path d="M4,4 C40,4 28,42 60,42 C92,42 80,12 116,12" fill="none" stroke="currentColor" stroke-width="1.3"/>
+        <path d="M4,4 C4,40 42,28 42,60 C42,92 12,80 12,116" fill="none" stroke="currentColor" stroke-width="1.3"/>
+        <path d="M4,4 C48,4 48,48 96,48" fill="none" stroke="currentColor" stroke-width="0.9" opacity="0.7"/>
+        <circle cx="60" cy="42" r="2.6" fill="currentColor"/>
+        <circle cx="42" cy="60" r="2.6" fill="currentColor"/>
+        <circle cx="96" cy="48" r="2" fill="currentColor" opacity="0.7"/>
+      </symbol>
+      <symbol id="orn-diamond" viewBox="0 0 16 16">
+        <path fill-rule="evenodd" d="M8 1 L11.2 8 L8 15 L4.8 8 Z M8 6.2 L9.4 8 L8 9.8 L6.6 8 Z"/>
+      </symbol>
+    </defs>
+  </svg>
+
+
+<main id="invitation">
+<section class="section rsvp-flow">
+  <svg class="corner corner-tl" viewBox="0 0 120 120" aria-hidden="true"><use href="#orn-flourish"/></svg>
+  <svg class="corner corner-tr" viewBox="0 0 120 120" aria-hidden="true"><use href="#orn-flourish"/></svg>
+  <div id="rsvp-questions">
+    <p class="eyebrow">Kindly Respond</p>
+    <h1 class="section-title script">RSVP</h1>
+    <p class="preview-note">Preview · Responses are not being sent yet.</p>
+    <p class="step-indicator" id="step-indicator" aria-live="polite">Question 1 of 2</p>
+    <form id="rsvp-form" novalidate>
+      <div class="question-panel" id="name-step">
+        <label class="question-label" for="full-name">Full name</label>
+        <input id="full-name" name="fullName" type="text" autocomplete="name" maxlength="150" required aria-describedby="form-error">
+      </div>
+      <div class="question-panel" id="party-step" hidden>
+        <label class="question-label" for="party-size">Total number attending,<br>including yourself</label>
+        <input id="party-size" name="partySize" type="number" min="1" step="1" inputmode="numeric" required aria-describedby="form-error">
+      </div>
+      <p id="form-error" class="form-error" role="alert"></p>
+      <div class="form-actions">
+        <a class="flow-button secondary" href="./index.html" id="invitation-back">Back</a>
+        <button class="flow-button secondary" type="button" id="step-back" hidden>Back</button>
+        <button class="flow-button primary" type="submit" id="step-next">Next <span aria-hidden="true">→</span></button>
+      </div>
+    </form>
+  </div>
+  <div id="rsvp-complete" hidden>
+    <p class="eyebrow">Until We Celebrate</p>
+    <h1 class="section-title script" tabindex="-1" id="thank-you-title">Thank You</h1>
+    <p id="response-message">This is a preview; your response has not been sent.</p>
+    <div class="divider"><span></span><svg class="divider-mark" viewBox="0 0 16 16" aria-hidden="true"><use href="#orn-diamond"/></svg><span></span></div>
+    <p class="field-label">Reception</p>
+    <p class="confirmation-date">Sunday, December 20th, 2026</p>
+    <p class="field-value">5:30 PM onwards</p>
+    <p class="field-label">Venue</p>
+    <p class="field-value venue-name">Metroplex Event Center</p>
+    <p class="field-sub">2331 S 8th St, Rogers, AR 72758</p>
+    <a class="maps-btn" href="https://www.google.com/maps/search/?api=1&amp;query=Metroplex+Event+Center+2331+S+8th+St+Rogers+AR+72758" target="_blank" rel="noopener noreferrer">View Location</a>
+    <div class="confirmation-countdown">
+      <h2 class="section-title script">Until We Celebrate</h2>
+      <div id="countdown" class="countdown" data-target="2026-12-20T17:30:00-06:00">
+        <div class="countdown-unit"><span class="value" id="cd-days">--</span><span class="label">Days</span></div>
+        <div class="countdown-unit"><span class="value" id="cd-hours">--</span><span class="label">Hours</span></div>
+        <div class="countdown-unit"><span class="value" id="cd-minutes">--</span><span class="label">Minutes</span></div>
+        <div class="countdown-unit"><span class="value" id="cd-seconds">--</span><span class="label">Seconds</span></div>
+      </div>
+
+    </div>
+    <a class="flow-button secondary return-link" href="./index.html">Back to Invitation</a>
+  </div>
+</section>
+</main>
+<script src="./static/js/rsvp-config.js"></script>
+<script src="./static/js/rsvp.js"></script>
+<script src="./static/js/countdown.js"></script>
+</body></html>
